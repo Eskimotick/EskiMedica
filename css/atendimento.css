@@ -1,0 +1,35 @@
+.logo {
+	margin-top: 0.5vw;
+}
+
+body nav div ul a {
+	color: black;
+}
+
+body nav div a img {
+	margin-left: 25vw;
+}
+
+#nav-mobile {
+	margin-right: 30vw;
+}
+
+#titulo-footer{
+	color: black;
+	text-align: center;
+}
+
+#minusculo {
+	font-size: 12px;
+}
+
+#footer-login {
+	margin-top: 8vh;
+}
+
+#copyright {
+	margin-top: 2vh;
+	font-size: 11px;
+	text-align: center;
+	color: black;
+}
