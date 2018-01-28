@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/atendimento.css">
 		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
 		<link rel="shortcun icon" href="img/icone/logo.ico">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 	<body>
 		<div class="navbar-fixed">
@@ -21,7 +22,60 @@
 			</nav>
 		</div>
 		<section>
-			
+			<div id="orientacao">
+				<a href="index.html">Página Principal</a> > Atendimento
+			</div>
+			<div class="container">
+				<ul class="collapsible col" data-collapsible="accordion">
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons prefix">call</i> Telefones para contato
+						</div>
+						<div class="collapsible-body">
+							<ul>
+								<li><b>Capitais e regiões metropolitanas:</b> 3003-4004</li>
+								<li><b>Demais regiões:</b> 4004-3003</li>
+								<li><b>Serviço de Atendimento ao Cliente:</b> 4003-3004</li>
+							</ul> <br>
+							Horário de atendimento: 
+							<ul>
+								<li><b>Segunda à Sexta:</b> 08:00 às 20:00</li>
+								<li><b>Sábado, domingo e feriados:</b> 10:00 às 18:00</li>
+							</ul>
+					</li>
+				<li>
+					<div class="collapsible-header">
+						<i class="material-icons">announcement</i>Dúvidas, sugestões e reclamações
+					</div>
+					<div class="collapsible-body">
+						<div class="row">
+							<form class="col s12">
+								<div class="row">
+									<div class="input-field col s6">
+										<input name="nome" type="text" class="validate">
+										<label for="Nome">Nome</label>
+									</div>
+									<div class="input-field col s6">
+										<input id="sobrenome" type="text" class="validate">
+										<label for="Sobrenome">Sobrenome</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<input id="email" type="email" class="validate">
+										<label for="email">E-mail</label>
+									</div>
+								</div>
+
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
 		</section>
 		<footer class="white page-footer">
 			<div class="container">
@@ -40,13 +94,15 @@
 					<div class="col l4 offset-l1">
 						<p id="titulo-footer">Contatos</p>
 						<div id="minusculo"> 
-							<div class="black-text">
-								Capitais e regiões metropolitanas: 3003-40004
-								Demais regiões: 4004-3003 <br>
-								SAC: 4003-3004 <br>
-								e-mail: atendimento@eskimedica.com.br
-							</div>
-							<a href="atendimento.html">Atendimento Online</a>
+							<ul>
+								<div class="black-text">
+									<li><strong>Capitais e regiões metropolitanas:</strong> 3003-4004</li>
+									<li><strong>Demais regiões:</strong> 4004-3003</li>
+									<li><strong>Serviço de Atendimento ao Cliente:</strong> 4003-3004</li>
+									<li>e-mail: atendimento@eskimedica.com.br</li>
+								</div>
+									<li><a href="atendimento.html">Atendimento Online</a></li>
+							</ul>
 						</div>
 					</div>
 					<div class="col l3 offset-l1" id="footer-login">
