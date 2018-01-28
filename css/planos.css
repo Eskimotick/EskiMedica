@@ -18,8 +18,26 @@ body {
 	font-family: "https://fonts.google.com/specimen/PT+Serif";
 }
 
-#carousel-buttons {
-	margin-top: 28vh;
+#carousel-1 {
+	background-image: url("../img/carousel/carousel-1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%
+}
+
+#carousel-2 {
+	background-image: url("../img/carousel/carousel-2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%
+}
+
+#carousel-3 {
+	background-image: url("../img/carousel/carousel-3.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%
+}
+
+#carousel-info {
+	margin-top: 34vh;
 }
 
 #titulo-footer{
