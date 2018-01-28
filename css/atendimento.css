@@ -10,6 +10,10 @@ body nav div a img {
 	margin-left: 25vw;
 }
 
+body {
+	font-family: "https://fonts.google.com/specimen/PT+Serif";
+}
+
 #nav-mobile {
 	margin-right: 30vw;
 }
@@ -17,11 +21,12 @@ body nav div a img {
 #orientacao {
 	margin-top: 5vh;
 	text-align: center;
-	font-size: 12px;
+	font-size: 15px;
 }
 
 #collapsible {
 	margin-top: 5vh;
+	margin-bottom: 5vh;
 }
 
 #radio-buttons {
