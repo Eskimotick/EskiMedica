@@ -66,7 +66,8 @@
 						</div>
 						<div class="collapsible-body">
 							<div class="row">
-								<form>
+								<form action="{{ route('formAtendimento') }}" enctype="multipart/form-data" method="POST">
+									{{ csrf_field() }}
 									<div class="row">
 										<div class="input-field col l6">
 											<input name="nome" id="nome" type="text" class="validate">
@@ -85,19 +86,19 @@
 									</div>
 									<div class="row" id="radio-buttons">
 										Você é da rede de planos de saúde EskiMedica?
-										<p><input name="cliente" type="radio" id="sim"/>
+										<p><input name="cliente" type="radio" id="sim" value="1"/>
 										<label for="sim">Sim</label></p>
-										<input name="cliente" type="radio" id="nao" />
+										<input name="cliente" type="radio" id="nao" value="2"/>
 										<label for="nao">Não</label>
 									</div>
 									<div class="row">
 										<div class="input-field col s12">
-											<textarea id="textarea1" class="materialize-textarea" data-length="500"></textarea>
+											<textarea name="mensagem" id="textarea1" class="materialize-textarea" data-length="500"></textarea>
 											<label for="textarea1">Qual sua dúvida, sugestão ou reclamação?</label>
 										</div>
 									</div>
-								</form>
-								<button class="blue lighten-1 right btn waves-effect waves-light" type="submit" name="action" id="button">Enviar<i class="material-icons right">send</i>
+									<button class="blue lighten-1 right btn waves-effect waves-light" type="submit" name="action" id="button" value="Submit">Enviar<i class="material-icons right">send</i>
+									</form>
 								</button>
 							</div>
 						</div>

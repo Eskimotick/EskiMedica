@@ -37,8 +37,12 @@ class duvidaController extends Controller
 
         $nome = $request->input('nome');
         $sobrenome = $request->input('sobrenome');
-        $email = $request->input('email;')
+        $email = $request->input('email');
+        $cliente = $request->input('cliente');
+        $mensagem = $request->input('mensagem');
 
+        duvida::create(['nome' => $nome, 'sobrenome' => $sobrenome, 'email' => $email, 'cliente' => $cliente, 'mensagem' => 'mensagem']);
+        return view('index');
     }
 
     /**

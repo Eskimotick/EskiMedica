@@ -15,6 +15,11 @@ class CreateDuvidasTable extends Migration
     {
         Schema::create('duvidas', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nome');
+            $table->string('sobrenome');
+            $table->string('email');
+            $table->integer('cliente');
+            $table->longText('mensagem');
             $table->timestamps();
         });
     }
