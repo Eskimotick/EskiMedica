@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::post('/atendimento', 'duvidaController@store')->('formAtendimento');
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });

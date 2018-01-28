@@ -33,9 +33,12 @@ class duvidaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
+    public function store(Request $request) {
+
+        $nome = $request->input('nome');
+        $sobrenome = $request->input('sobrenome');
+        $email = $request->input('email;')
+
     }
 
     /**
