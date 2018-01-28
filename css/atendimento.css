@@ -20,6 +20,19 @@ body nav div a img {
 	font-size: 12px;
 }
 
+#collapsible {
+	margin-top: 5vh;
+}
+
+#radio-buttons {
+	margin-left: 1vw;
+}
+
+#button {
+	margin-top: 1vh;
+	margin-right: 1vw;
+}
+
 #titulo-footer{
 	color: black;
 	text-align: center;

@@ -26,7 +26,7 @@
 				<a href="index.html">Página Principal</a> > Atendimento
 			</div>
 			<div class="container">
-				<ul class="collapsible col" data-collapsible="accordion">
+				<ul class="collapsible" data-collapsible="accordion" id="collapsible">
 					<li>
 						<div class="collapsible-header">
 							<i class="material-icons prefix">call</i> Telefones para contato
@@ -43,39 +43,50 @@
 								<li><b>Sábado, domingo e feriados:</b> 10:00 às 18:00</li>
 							</ul>
 					</li>
-				<li>
-					<div class="collapsible-header">
-						<i class="material-icons">announcement</i>Dúvidas, sugestões e reclamações
-					</div>
-					<div class="collapsible-body">
-						<div class="row">
-							<form class="col s12">
-								<div class="row">
-									<div class="input-field col s6">
-										<input name="nome" type="text" class="validate">
-										<label for="Nome">Nome</label>
-									</div>
-									<div class="input-field col s6">
-										<input id="sobrenome" type="text" class="validate">
-										<label for="Sobrenome">Sobrenome</label>
-									</div>
-								</div>
-								<div class="row">
-									<div class="input-field col s12">
-										<input id="email" type="email" class="validate">
-										<label for="email">E-mail</label>
-									</div>
-								</div>
-
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">announcement</i>Dúvidas, sugestões e reclamações
+						</div>
+						<div class="collapsible-body">
+							<div class="row">
+								<form>
+									<div class="row">
+										<div class="input-field col l6">
+											<input name="nome" id="nome" type="text" class="validate">
+											<label for="nome">Nome</label>
+										</div>
+										<div class="input-field col l6">
+											<input name="sobrenome" id="sobrenome" type="text" class="validate">
+											<label for="sobrenome">Sobrenome</label>
 										</div>
 									</div>
-								</div>
-							</form>
+									<div class="row">
+										<div class="input-field col l12">
+											<input name="email" id="email" type="email" class="validate">
+											<label for="email">E-mail</label>
+										</div>
+									</div>
+									<div class="row" id="radio-buttons">
+										Você é da rede de planos de saúde EskiMedica?
+										<p><input name="cliente" type="radio" id="sim"/>
+										<label for="sim">Sim</label></p>
+										<input name="cliente" type="radio" id="nao" />
+										<label for="nao">Não</label>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<textarea id="textarea1" class="materialize-textarea" data-length="500"></textarea>
+											<label for="textarea1">Qual sua dúvida, sugestão ou reclamação?</label>
+										</div>
+									</div>
+								</form>
+								<button class="right btn waves-effect waves-light" type="submit" name="action" id="button">Enviar<i class="material-icons right">send</i>
+								</button>
+							</div>
 						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
+					</li>
+				</ul>
+			</div>
 		</section>
 		<footer class="white page-footer">
 			<div class="container">
