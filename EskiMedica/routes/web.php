@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/index', function () {
+Route::get('/', function () {
 	 return view('index');
 });
 
@@ -21,3 +21,7 @@ Route::get('/atendimento', 'inicioController@add')->name('formAtendimento');
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
