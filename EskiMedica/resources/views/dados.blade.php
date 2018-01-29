@@ -1,5 +1,5 @@
 <html>
 	<body>
-		{{$duvida->nome}} {{$duvida->sobrenome}} {{$duvida->email}} {{$duvida->cliente}} {{$duvida->mensagem}}
+		{{$Client->nome}} {{$Client->sobrenome}} {{$Client->email}} {{$Client->cliente}} {{$Client->mensagem}}
 	</body>
 </html>

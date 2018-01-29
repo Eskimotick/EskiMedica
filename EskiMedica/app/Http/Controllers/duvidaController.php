@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\duvida;
+use App\Client;
 use App\Mail\Dados;
 use Illuminate\Http\Request;
 
@@ -42,9 +42,9 @@ class duvidaController extends Controller
         $cliente = $request->input('cliente');
         $mensagem = $request->input('mensagem');
 
-        duvida::create(['nome' => $nome, 'sobrenome' => $sobrenome, 'email' => $email, 'cliente' => $cliente, 'mensagem' => $mensagem]);
+        Client::create(['nome' => $nome, 'sobrenome' => $sobrenome, 'email' => $email, 'cliente' => $cliente, 'mensagem' => $mensagem]);
 
-        $user = duvida::create(request(['nome', 'sobrenome', 'email', 'cliente', 'mensagem']));
+        $user = Client::create(request(['nome', 'sobrenome', 'email', 'cliente', 'mensagem']));
 
         \Mail::to($user)->send(new Dados($user));
 

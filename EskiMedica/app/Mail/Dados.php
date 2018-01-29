@@ -18,7 +18,7 @@ class Dados extends Mailable
      *
      * @return void
      */
-    public function __construct(duvida $user)
+    public function __construct(Client $user)
     {
         $this->user=$user;
     }
