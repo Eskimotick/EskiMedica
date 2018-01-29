@@ -1,5 +1,5 @@
 <html>
 	<body>
-		{{$Client->nome}} {{$Client->sobrenome}} {{$Client->email}} {{$Client->cliente}} {{$Client->mensagem}}
+		{{$user->nome}} {{$user->sobrenome}} {{$user->email}} {{$user->cliente}} {{$user->mensagem}}
 	</body>
 </html>
